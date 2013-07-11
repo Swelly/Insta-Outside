@@ -7,6 +7,6 @@ class WelcomeController < ApplicationController
   end
 
   def construction
-    "uh oh..."
+    "uh oh"
   end
 end
