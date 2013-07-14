@@ -91,6 +91,7 @@ GEM
     mime-types (1.23)
     multi_json (1.7.7)
     multipart-post (1.2.0)
+    newrelic_rpm (3.6.5.130)
     pg (0.15.1)
     polyglot (0.3.3)
     pry (0.9.12.2)
@@ -168,6 +169,7 @@ DEPENDENCIES
   instagram
   jquery-rails
   meta_request
+  newrelic_rpm
   pg
   pry-debugger
   pry-rails

@@ -5,7 +5,7 @@ ruby '2.0.0'
 gem 'rails', '3.2.13'
 gem 'flatui-rails'
 gem 'instagram'
-
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
