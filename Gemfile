@@ -3,7 +3,6 @@ ruby '2.0.0'
 # This fixes our version of Ruby at 2.0.0 for local and Heroku
 
 gem 'rails', '3.2.13'
-gem 'flatui-rails'
 gem 'instagram'
 gem 'newrelic_rpm'
 
