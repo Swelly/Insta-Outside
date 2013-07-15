@@ -1,9 +1,10 @@
 InstaApp::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  root :to => 'insta#index'
-  get '/details' => 'insta#details', :as => 'details'
-  get '/search' => 'insta#search', :as => 'search'
+  root :to => 'home#index'
+  get '/about' => 'home#about', :as => 'about'
+  get '/contact' => 'home#contact', :as => 'contact'
+  get '/search' => 'home#search', :as => 'search'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
