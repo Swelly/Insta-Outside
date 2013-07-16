@@ -1,10 +1,23 @@
 InstaApp::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
+  devise_for :users
+
   root :to => 'home#index'
+
   get '/about' => 'home#about', :as => 'about'
   get '/contact' => 'home#contact', :as => 'contact'
-  get '/search' => 'home#search', :as => 'search'
+  get '/sign_up' => 'home#sign_up', :as => 'search'
+
+
+
+  # devise_for :users
+
+  # get '/users/profile' => 'users#profile', :as => 'profile'
+  # get '/users/search' => 'users#search', :as => 'search'
+  # get '/users/results/:id' => 'users#show', :as => 'show'
+  # post '/users/results/:id' => 'users#follow', :as => 'follow'
+  # The priority is based upon order of creation:
+  # first created -> highest priority.
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

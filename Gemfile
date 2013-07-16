@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'rails', '3.2.13'
 gem 'instagram'
 gem 'newrelic_rpm'
+gem 'devise'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -33,6 +34,7 @@ group :development, :test do
   gem 'rails-erd'           # Diagrams your models. NOTE! $ brew install graphviz
                             # https://github.com/voormedia/rails-erd
   gem 'dotenv-rails'
+  gem 'sqlite3'
 end
 
 

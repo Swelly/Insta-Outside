@@ -1,5 +1,14 @@
-<h1>Insta_App</h1>
-<h3>Find photos via form.</h3>
-<br>
-<h4>Click <a href="https://api.instagram.com/oauth/authorize/?client_id=dff39c679beb47428cee458cdf9a5163&amp;redirect_uri=https://insta-outside.herokuapp.com/&amp;response_type=code">here</a> to login with Instagram</h4>
+<div class = "container">
+  <div class = "hero-unit">
+    <h1 class ="title">Insta-Outside</h1>
+    <h3>Find photos via form.</h3>
+    <div class = "search">
+    <%= form_tag('/search', :method => 'get') do %>
+      <%= text_field_tag(:query, nil,  :placeholder => 'Search for photos') %>
+      <%= submit_tag 'Go' %>
+    <% end %>
+    </div>
+    <h4>Click <% link_to ("here"),%> to get started with </h4>
+  </div>
+</div>
 
