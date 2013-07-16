@@ -14,9 +14,6 @@ gem 'newrelic_rpm'
 gem 'pg', :group => :production
 
 group :development, :test do
-  gem 'sqlite3'             # Heroku doesn't run sqlite3, but Postgres. However, we can use Postgres locally
-
-
   gem 'pry-rails'           # Causes rails console to open pry
                             # https://github.com/rweng/pry-rails
   gem 'pry-debugger'        # Adds step, next, finish, and continue commands and breakpoints
@@ -33,6 +30,8 @@ group :development, :test do
                             # https://github.com/banister/binding_of_caller
   gem 'meta_request'        # Supporting gem for Rails Panel (Google Chrome extension for Rails development).
                             # https://github.com/dejan/rails_panel/tree/master/meta_request
+  gem 'rails-erd'           # Diagrams your models. NOTE! $ brew install graphviz
+                            # https://github.com/voormedia/rails-erd
   gem 'dotenv-rails'
 end
 
