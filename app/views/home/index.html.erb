@@ -5,10 +5,10 @@
     <div class = "search">
     <%= form_tag('/search', :method => 'get') do %>
       <%= text_field_tag(:query, nil,  :placeholder => 'Search for photos') %>
-      <span class="btn"><%= submit_tag 'Go' %></span>
+      <span class="btn btn-inverse"><%= submit_tag 'Go' %></span>
     <% end %>
     </div>
-    <h4>Click <%= link_to 'Sign-up', new_user_registration_path %> to get started.</h4>
+    <%= render 'layouts/quick_sign' %>
   </div>
 </div>
 

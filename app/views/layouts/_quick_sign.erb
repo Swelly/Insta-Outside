@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+  <% nil %>
+<% else %>
+  <h4>
+    Click <%= link_to 'Sign-up', new_user_registration_path %> to get started.
+  </h4>
+<% end %>
