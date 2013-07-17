@@ -5670,6 +5670,7 @@ a.thumbnail:focus {
 .label:empty,
 .badge:empty {
   display: none;
+  outline-color: cyan;
 }
 
 a.label:hover,

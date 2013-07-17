@@ -162,6 +162,12 @@ you can use the generic selector below, but it's slower:
   zoom: 1;
   *display: inline;
 }
+.devise {
+  display: block;
+  list-style: none;
+  margin-right: 15px;
+  text-align: right;
+}
 .clearfix {
   *zoom: 1;
 }
@@ -446,6 +452,9 @@ h1 {
   font-weight: 900;
   margin-left: -6px;
   padding: 10px 0;
+}
+.comment {
+  color: #F7BE81;
 }
 .title {
   font-family: "Lobster Two";
