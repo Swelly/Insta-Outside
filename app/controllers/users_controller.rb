@@ -5,13 +5,13 @@ class UserController < ApplicationController
   def search
   end
 
-  def like_photo
+  def like_picture
   end
 
   def show
   end
 
-  def love_photo
+  def love_picture
   end
 
   def profile
