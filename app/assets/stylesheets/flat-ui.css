@@ -415,7 +415,7 @@ you can use the generic selector below, but it's slower:
 body {
   color: #34495e;
   font-family: "Brawler", serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.231;
   background-image: url('fabric.jpg');
   background-repeat: repeat;
@@ -457,7 +457,9 @@ h1 {
   -webkit-text-fill-color: transparent;*/
 }
 h2 {
-  font-size: 26px;
+  font-family: "Lobster Two";
+  text-decoration: underline;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: 2px;
 }
