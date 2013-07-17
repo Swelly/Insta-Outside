@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   def index
     Instagram.configure do |config|
     config.client_id = ENV['CLIENT_ID']
-    config.client_secret = ENV['CLIENT_SECRET']
+    config.access_token = ENV['ACCESS_TOKEN']
     end
   end
 
@@ -13,7 +13,7 @@ class HomeController < ApplicationController
   def contact
   end
 
-  def search
+  def result
   end
 
   def construction

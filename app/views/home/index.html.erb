@@ -9,6 +9,12 @@
     <% end %>
     </div>
     <%= render 'layouts/quick_sign' %>
+
+    <% photos = Instagram.tag_recent_media('central', 'park', 'earth') %>
+    <% photos.each do |instagram| %>
+    <%= image_tag instagram.images.standard_resolution.url %>
+
+<% end %>
   </div>
 </div>
 
