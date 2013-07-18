@@ -1,0 +1,10 @@
+<ul>
+<% @photos.each do |photo| %>
+      <% if photo.videos %>
+        <%= link_to (image_tag photo.images.thumbnail.url), photo.videos.standard_resolution.url if photo.videos %>
+      <% else %>
+        <%= link_to (image_tag photo.images.thumbnail.url), photo.images.standard_resolution.url if photo.images %>
+      <% end %>
+
+    <% end %>
+</ul>
