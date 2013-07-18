@@ -11,6 +11,8 @@ InstaApp::Application.routes.draw do
   get '/users/search' => 'users#search', :as => 'search'
   get '/users/results/:id' => 'users#show', :as => 'show'
   post '/users/results/:id' => 'users#follow', :as => 'follow'
+
+  get '/pictures/results' => 'pictures#results', as: 'pictures'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

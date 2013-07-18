@@ -165,8 +165,9 @@ you can use the generic selector below, but it's slower:
 .devise {
   display: block;
   list-style: none;
-  margin-right: 15px;
-  text-align: right;
+  margin-top: 10px;
+  margin-left: 25px;
+  float: left;
 }
 .clearfix {
   *zoom: 1;
@@ -752,20 +753,36 @@ h6 {
 }
 .navigation_flat {
   font-family: "Lobster Two";
-  font-size: 24px;
   background-color: #f5f5f5;
-  text-align: center;
-  position: relative;
   top: 0;
   z-index: 1000;
-  padding: 5px 0 5px 0;
-  margin-left: -10px;
-  border-bottom: 1px solid #e5e5e5;
+  height: 50px;
+  padding: 10px 0 10px 20px;
+  border-bottom: 3px solid #e5e5e5;
 }
-.search {
+.navigation_flat a {
+  font-size: 35px;
+  position: static;
+  margin: 0 5px 0 25px;
+  float: left;
+}
+.search_pictures {
+  position: relative;
+  float: right;
+  margin-right: 30px;
+  text-align: right
+}
+.navigation_flat h3 {
+  opacity: 0.7;
+  color: black;
+  position: relative;
+  float: right;
+  }
+.search_photos {
   position: static;
   float: none;
-  text-align: center;
+  margin: 5px 0;
+  padding: 5px 0;
 }
 
 .navbar .brand {

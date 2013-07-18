@@ -2,19 +2,8 @@
   <div class = "hero-unit">
     <h1 class ="title">Insta-Outside</h1>
     <h3>Find photos via form.</h3>
-    <div class = "search">
-    <%= form_tag('/search', :method => 'get') do %>
-      <%= text_field_tag(:query, nil,  :placeholder => 'Search for photos') %>
-      <span class="btn btn-inverse"><%= submit_tag 'Go' %></span>
-    <% end %>
-    </div>
+    <br>
     <%= render 'layouts/quick_sign' %>
-
-    <% photos = Instagram.tag_recent_media('central', 'park', 'earth') %>
-    <% photos.each do |instagram| %>
-    <%= image_tag instagram.images.standard_resolution.url %>
-
-<% end %>
   </div>
 </div>
 
