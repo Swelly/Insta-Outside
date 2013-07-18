@@ -1,0 +1,8 @@
+<div class = "container-fluid user_entry">
+  <h1>Search</h1>
+  <div class = "search">
+    <%= form_tag('/pictures/results', :method => 'get') do %>
+      <%= text_field_tag(:tag, nil,  :placeholder => 'Enter a hashtag', :autofocus => "on") %>
+    <% end %>
+  </div>
+</div>
