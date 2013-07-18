@@ -1,10 +1,15 @@
-<ul>
-<% @photos.each do |photo| %>
-      <% if photo.videos %>
-        <%= link_to (image_tag photo.images.thumbnail.url), photo.videos.standard_resolution.url if photo.videos %>
-      <% else %>
-        <%= link_to (image_tag photo.images.thumbnail.url), photo.images.standard_resolution.url if photo.images %>
-      <% end %>
+<div class = "container-fluid">
+  <ul class = "tile">
+    <h2 class = "pictures">Pictures tagged:</h2>
+    <h3 class = "pictures_3">#<%=params[:tag]%></h3>
+  <% @photos.each do |photo| %>
+    <% if photo.videos %>
 
+      <%= link_to (image_tag photo.images.thumbnail.url), photo.videos.standard_resolution.url if photo.videos %>
+    <% else %>
+
+      <%= link_to (image_tag photo.images.thumbnail.url), photo.images.standard_resolution.url if photo.images %>
     <% end %>
-</ul>
+  <% end %>
+  </ul>
+</div>

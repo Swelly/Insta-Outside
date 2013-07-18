@@ -457,6 +457,17 @@ h1 {
 .comment {
   color: #F7BE81;
 }
+.pictures {
+  font-family: "Lobster Two";
+  text-decoration: none;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.pictures_3 {
+  margin: 12px 0;
+  color: #1abc9c;
+}
 .title {
   font-family: "Lobster Two";
   font-weight: 900;
@@ -474,20 +485,19 @@ h2 {
   margin-bottom: 2px;
 }
 h3 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   margin-top: 2px;
 }
 h4 {
   font-size: 18px;
   font-weight: 500;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 h5 {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 500;
-  text-transform: uppercase;
 }
 h6 {
   font-size: 13px;
@@ -767,6 +777,12 @@ h6 {
   float: left;
 }
 .search_pictures {
+  position: relative;
+  float: right;
+  margin-right: 30px;
+  text-align: right
+}
+.search_pictures_nil {
   position: relative;
   float: right;
   margin-right: 30px;
@@ -1701,8 +1717,8 @@ textarea[disabled],
 textarea[readonly] {
   background-color: #f4f6f6;
   border-color: #d5dbdb;
-  color: #d5dbdb;
-  cursor: default;
+  color: #BDBDBD;
+  cursor: hand;
 }
 input,
 textarea,
@@ -2891,6 +2907,12 @@ textarea[class*="span"] {
   position: relative;
   text-align: center;
 }
+.tile img {
+  padding: 5px 5px 5px 0;
+  margin-top: 5px;
+  border: dotted 1.5px;
+}
+/*{<p><%= image_tag location %><p>}*/
 .tile.tile-hot:before {
   background: url(../images/tile/ribbon.png) 0 0 no-repeat;
   background-size: 82px 82px;
