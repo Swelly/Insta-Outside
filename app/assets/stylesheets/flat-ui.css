@@ -2935,7 +2935,7 @@ textarea[class*="span"] {
   margin-bottom: 33px;
 }
 .tile-image {
-  height: 100px;
+  height: auto;
   margin: 31px 0 27px;
   vertical-align: bottom;
 }

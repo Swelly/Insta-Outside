@@ -2,9 +2,11 @@
   <h1><%= @user.username %></h1>
   <h4>Photos you like:</h4>
 <% current_user.likes.each do |like| %>
-    <ul>
+  <div class ="tile">
+    <ul class = "tile-image">
       <%= image_tag like.image_path %>
     </ul>
+  </div>
 <% end %>
 
 </div>

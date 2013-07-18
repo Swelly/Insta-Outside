@@ -7,8 +7,7 @@ InstaApp::Application.routes.draw do
   devise_for :users
 
   get '/users/profile' => 'users#profile', :as => 'profile'
-
-  post 'users/profile' => 'users#profile', :as => 'profile'
+  post 'users/profile' => 'users#add_to_profile', :as => 'add_to_profile'
 
   get '/pictures' => 'pictures#search', :as => 'pictures/search'
   get '/pictures/results' => 'pictures#results', :as => 'pictures/results'

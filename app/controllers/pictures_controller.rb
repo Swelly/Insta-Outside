@@ -13,15 +13,4 @@ class PicturesController < ApplicationController
     @like = Like.new
   end
 
-  def add_likes
-    params[:current_user][:likes_ids].each do |url|
-      image = Like.new
-      image.image_path = url
-      image.save
-
-      current_user.likes << image
-      end
-    redirect_to '/users/profile'
-  end
-
 end
