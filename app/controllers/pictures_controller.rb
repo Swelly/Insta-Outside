@@ -7,9 +7,9 @@ class PicturesController < ApplicationController
   end
 
   def results
-    tiles = {:count => 40}
+    tiles = {:count => 50}
     natural = 'vscocam'
-    searched = Instagram.tag_recent_media(params[:tag] && natural, tiles)
+    searched = Instagram.tag_recent_media(params[:tag], natural, tiles)
     @photos = searched
   end
 

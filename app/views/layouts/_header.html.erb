@@ -5,7 +5,7 @@
     <% if user_signed_in? %>
     <div class = "search_pictures">
       <%= form_tag('/pictures/results', :method => 'get') do %>
-        <%= text_field_tag(:tag, nil,  :placeholder => 'Enter Nature Type') %>
+        <%= text_field_tag(:tag, nil,  :placeholder => 'Enter Nature Type', :autofocus => "on") %>
       <% end %>
     </div>
     <% else %>
