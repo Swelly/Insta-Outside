@@ -1,20 +1,15 @@
 InstaApp::Application.routes.draw do
   root :to => 'home#index'
-
   get '/about' => 'home#about', :as => 'about'
   get '/contact' => 'home#contact', :as => 'contact'
   # get '/sign_up' => 'home#sign_up', :as => 'search'
 
   devise_for :users
 
-  get '/users/profile' => 'users#profile', :as => 'profile'
-  get '/users/search' => 'users#search', :as => 'search'
-  get '/users/results/:id' => 'users#show', :as => 'show'
-  post '/users/results/:id' => 'users#follow', :as => 'follow'
+  get '/users/profile/:id' => 'users#profile', :as => 'profile'
 
-  get '/pictures' => 'pictures#search', :as => 'search/pics'
+  get '/pictures' => 'pictures#search', :as => 'pictures/search'
   get '/pictures/results' => 'pictures#results', :as => 'pictures/results'
-  get '/pictures/show' => 'pictures#show', :as => 'picture'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

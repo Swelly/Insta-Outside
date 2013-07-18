@@ -1,20 +1,10 @@
-class UserController < ApplicationController
-  def index
-  end
+class UsersController < ApplicationController
 
   def search
   end
 
-  def like_picture
-  end
-
-  def show
-  end
-
-  def love_picture
-  end
-
   def profile
+    @user = User.find(params[:id])
   end
 
 end

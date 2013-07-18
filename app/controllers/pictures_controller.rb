@@ -13,7 +13,4 @@ class PicturesController < ApplicationController
     @photos = searched
   end
 
-  def love
-  end
-
 end

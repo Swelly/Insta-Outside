@@ -13,9 +13,6 @@ class HomeController < ApplicationController
   def contact
   end
 
-  def result
-  end
-
   def construction
     "uh oh"
   end

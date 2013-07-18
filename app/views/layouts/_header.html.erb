@@ -3,6 +3,9 @@
     <%= link_to("About", about_path) %>
     <%= link_to("Contact", contact_path) %>
     <% if user_signed_in? %>
+    <div class = "user">
+      <%= link_to("#{current_user.name.capitalize}", profile_path(current_user.id)) %>
+    </div>
     <div class = "search_pictures">
       <%= form_tag('/pictures/results', :method => 'get') do %>
         <%= text_field_tag(:tag, nil,  :placeholder => 'Enter Nature Type', :autofocus => "on") %>

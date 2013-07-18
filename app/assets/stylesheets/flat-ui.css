@@ -494,6 +494,7 @@ h4 {
   font-size: 18px;
   font-weight: 500;
   margin-top: 5px;
+  margin-left: 15px;
 }
 h5 {
   font-size: 25px;
@@ -783,6 +784,10 @@ h6 {
   float: right;
   margin-right: 30px;
   text-align: right
+}
+.user a {
+  color: #5FB404;
+  display: inline;
 }
 .search_pictures_nil {
   position: relative;
