@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :likes
   has_many :pictures
 
-  attr_accessible :email, :password, :username, :password_confirmation, :name, :age, :gender
+  attr_accessible :email, :password, :username, :password_confirmation, :name, :age, :gender, :remember_me
 end
