@@ -1,5 +1,10 @@
 <div class = "container-fluid user_profile">
   <h1><%= @user.username %></h1>
   <h4>Photos you like:</h4>
+<% current_user.likes.each do |like| %>
+    <ul>
+      <%= image_tag like.image_path %>
+    </ul>
+<% end %>
 
 </div>

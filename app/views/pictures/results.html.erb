@@ -2,9 +2,12 @@
   <ul class = "tile">
     <h2 class = "pictures">Pictures tagged:</h2>
     <h3 class = "pictures_3">#<%=params[:tag]%></h3>
-  <% @photos.each do |photo| %>
-    <%= image_tag photo.images.low_resolution.url %>
-    <%= check_box_tag "", photo.images.standard_resolution.url%>
+  <%= form_for @like, :url => profile_path do |f| %>
+    <% @searched.each do |photo| %>
+      <%= image_tag photo.images.low_resolution.url %>
+      <%= check_box_tag "current_user[:like_ids][]", photo.images.standard_resolution.url%>
+    <% end %>
+    <%= f.submit "Like" %>
   <% end %>
 
   </ul>
