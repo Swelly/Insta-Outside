@@ -1,0 +1,11 @@
+<% if user_signed_in? %>
+  <div class = "search">
+      <%= form_tag('/pictures/results', :method => 'get') do %>
+        <%= text_field_tag(:tag, nil,  :placeholder => 'Enter Nature Type', :autofocus => "on") %>
+      <% end %>
+    </div>
+    <% else %>
+      <div class = "search_pictures">
+        <input type="text" value="Log-in to Search" disabled="disabled">
+    </div>
+    <% end %>

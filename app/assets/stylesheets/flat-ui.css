@@ -791,6 +791,11 @@ h6 {
   margin-right: 30px;
   text-align: right
 }
+.search_search {
+  margin-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
 .user a {
   color: #5FB404;
   display: inline;

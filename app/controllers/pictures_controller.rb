@@ -1,9 +1,6 @@
 class PicturesController < ApplicationController
 
   def search
-    # if params[:tag]
-    # search = Instagram.tag_recent_media(params[:tag])
-    # @search = search
   end
 
   def results

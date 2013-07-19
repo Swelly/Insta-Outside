@@ -1,8 +1,14 @@
 <div class = "container-fluid user_entry">
   <h1>Search</h1>
-  <div class = "search">
-    <%= form_tag('/pictures/results', :method => 'get') do %>
-      <%= text_field_tag(:tag, nil,  :placeholder => 'Enter a hashtag', :autofocus => "on") %>
+    <% if user_signed_in? %>
+      <div class = "search">
+        <%= form_tag('/pictures/results', :method => 'get') do %>
+          <%= text_field_tag(:tag, nil,  :placeholder => 'Enter a hashtag', :autofocus => "on") %>
+        <% end %>
+      </div>
+    <% else %>
+      <div class = "search_search">
+        <input type="text" value="Log-in to Search" disabled="disabled">
+      </div>
     <% end %>
-  </div>
 </div>
