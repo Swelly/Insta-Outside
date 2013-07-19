@@ -425,8 +425,12 @@ body {
   font-size: 16px;
   line-height: 1.231;
   background-image: url('fabric.jpg');
+  background-position: fixed;
   background-repeat: repeat;
 }
+/*.bground {
+  background-image: url('insta-outside.jpg');
+}*/
 input,
 button,
 select,
@@ -781,6 +785,8 @@ h6 {
 }
 .search_pictures {
   position: relative;
+  top: 2px;
+  right: 3px;
   float: right;
   margin-right: 30px;
   text-align: right

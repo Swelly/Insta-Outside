@@ -18,4 +18,9 @@ class UsersController < ApplicationController
     redirect_to '/users/profile'
   end
 
+  def remove
+    current_user.likes.find(params[:likes]).destroy
+    redirect_to '/users/profile'
+  end
+
 end

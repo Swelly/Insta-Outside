@@ -6,6 +6,8 @@ InstaApp::Application.routes.draw do
 
   devise_for :users
 
+  post 'users/remove' => 'users#remove', :as => 'remove_likes'
+
   get '/users/profile' => 'users#profile', :as => 'profile'
   post 'users/profile' => 'users#add_to_profile', :as => 'add_to_profile'
 

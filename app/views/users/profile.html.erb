@@ -5,6 +5,11 @@
   <div class ="tile">
     <ul class = "tile-image">
       <%= image_tag like.image_path %>
+      <%= form_tag('/users/remove', method: 'post') do %>
+          <%= hidden_field_tag(:likes, like.id) %>
+            <%= button_tag :type => 'submit' do %>
+              <% end %>
+        <% end %>
     </ul>
   </div>
 <% end %>
