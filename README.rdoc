@@ -49,3 +49,5 @@ We’ll also be looking at:
 Quality of communication around decision-making. Can you defend why you chose a certain technology or why you implemented your solution in a certain way?
 Your ability to pick up new technologies.
 Your ability to take full advantage of a language’s features.
+
+Would like to continue as a side project. Incorporate OAuth and provide a better search feature to display locations as well as users (friends and other general uers)
